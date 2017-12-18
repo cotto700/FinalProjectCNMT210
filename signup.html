@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up!</title>
+	<link href="../main_style.css" rel="stylesheet">
+	<link href="../css/signup_style.css" rel="stylesheet">
+	<script src="../cgi-bin/signup.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+</head>
+
+<body>
+	<header>	
+		<img class="topbanner" src="../images/topbanner.gif" alt="Paint and Sip!	Drink Wine! Make Art!">
+		<nav class="topnav">
+			<ul class="mainnav">
+				<li class="mainitem"><a href="../index.html">Home</a></li>
+				<li class="mainitem"><a href="whatwedo.html">What We Do!</a></li>
+				<li class="mainitem"><a href="signup.html"><strong>Sign Up!</strong></a></li>
+				<li class="mainitem"><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="article">
+	<section class="calendar">
+	<h2>Special Events!</h2>
+		<section class="Jan">
+		<h3>January 2017</h3>
+		<ul>
+			<li>8th - Local Artist: Tamara Perseus</li>
+			<li>9th - Local Artist: Steren Renáta</li>
+			<li>22nd - Local Artist: Julia Neriah</li>
+			<li>24th - Local Artist: Sara Raine</li>
+			<li>30th - Local Artist: Reynaldo Bette</li>
+		</ul>
+		<br>
+		</section>
+		<section class="Feb">
+		<h3>Feburary 2018</h3>
+		<ul>
+			<li>5th - Local Artist: Dallas Zowie</li>
+			<li>9th - Local Artist: Desideria Laci</li>
+			<li>15th - Local Artist: Deloris Line</li>
+			<li>22nd - Local Artist: Mora Coral</li>
+			<li>26th - Local Artist: Colby Edmonde</li>
+			<li>28th - Local Artist: Corine Asia</li>
+		</ul>
+		<br>
+		</section>
+		<section class="Mar">
+		<h3>March 2018</h3>
+		<ul>
+			<li>6th - Local Artist: Seth Tom</li>
+			<li>12th - Local Artist: Taryn Barnaby</li>
+			<li>16th - Local Artist: Sharise Mokosh</li>
+			<li>22nd - Local Artist: Laurissa Crescenzo</li>
+			<li>27th - Local Artist: Mélodie Malinda</li>
+			<li>30th - Local Artist: Mirabelle Eva</li>
+		</ul>
+		</section>
+	</section>
+	</div>
+	
+	<form>	
+		<h3> Event Sign Up</h3>
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" placeholder="First and Last" minlength="6" required>
+
+		<label for="number">Payment</label>
+		<input type="text" id="pay" name="pay" placeholder="Card Number [XXXX-XXXX-XXXX-XXXX]"  pattern="[1-9]{4}[-]{1}[1-9]{4}[-]{1}[1-9]{4}[-]{1}[1-9]{4}" required>
+		
+		<label for="number">Participants</label>
+		<input type="text" id="number" name="number" placeholder="Number of Participants ($30 per person)" required>
+		
+		<label for="event">Events</label>
+		<select id="event" name="event" >
+		  <option>Jan 1st</option>
+		  <option>Jan 2nd</option>
+		  <option>Jan 3rd</option>
+		  <option>Jan 4th</option>
+		  <option>Jan 5th</option>
+		  <option>Jan 8th</option>
+		  <option>Jan 9th</option>
+		  <option>Jan 10th</option>
+		  <option>Jan 12th</option>
+		  <option>Jan 15th</option>
+		  <option>Jan 16th</option>
+		  <option>Jan 17th</option>
+		  <option>Jan 18th</option>
+		  <option>Jan 19th</option>
+		  <option>Jan 22nd</option>
+		  <option>Jan 23rd</option>
+		  <option>Jan 24th</option>
+		  <option>Jan 25th</option>
+		  <option>Jan 26th</option>
+		  <option>Jan 29th</option>
+		  <option>Jan 30rd</option>
+		  <option>Jan 31st</option>
+		  <option>Feb 1st</option>
+		  <option>Feb 2nd</option>
+		  <option>Feb 5th</option>
+		  <option>Feb 6th</option>
+		  <option>Feb 7th</option>
+		  <option>Feb 8th</option>
+		  <option>Feb 9th</option>
+		  <option>Feb 12th</option>
+		  <option>Feb 13th</option>
+		  <option>Feb 14th</option>
+		  <option>Feb 15th</option>
+		  <option>Feb 16th</option>
+		  <option>Feb 19th</option>
+		  <option>Feb 20th</option>
+		  <option>Feb 21st</option>
+		  <option>Feb 22nd</option>
+		  <option>Feb 23rd</option>
+		  <option>Feb 26th</option>
+		  <option>Feb 27th</option>
+		  <option>Feb 28th</option>
+		  <option>Mar 1st</option>
+		  <option>Mar 2nd</option>
+		  <option>Mar 5th</option>
+		  <option>Mar 6th</option>
+		  <option>Mar 7th</option>
+		  <option>Mar 8th</option>
+		  <option>Mar 9th</option>
+		  <option>Mar 12th</option>
+		  <option>Mar 13th</option>
+		  <option>Mar 14th</option>
+		  <option>Mar 15th</option>
+		  <option>Mar 16th</option>
+		  <option>Mar 19th</option>
+		  <option>Mar 20th</option>
+		  <option>Mar 21st</option>
+		  <option>Mar 22nd</option>
+		  <option>Mar 23rd</option>
+		  <option>Mar 26th</option>
+		  <option>Mar 27th</option>
+		  <option>Mar 28th</option>
+		  <option>Mar 29th</option>
+		  <option>Mar 30th</option>
+		</select>
+		
+		<label for="email">Email Address</label>
+		<input type="text" id="email" name="email" placeholder="example@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+			
+		<input  id="submit" type="submit" name="submit" value="Submit" onsubmit="signup()"/>
+	</form>
+	<footer>
+	<br>
+		<p> © 2017 Paint and Sip!</p>
+	<br>
+	</footer>
+</body>
+
+</html>
+

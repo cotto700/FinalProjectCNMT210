@@ -1,0 +1,100 @@
+*{
+	display: block;
+}
+.article, form{
+	display: inline;
+	margin-bottom: 20px;
+}
+
+
+.article {
+	background: rgba(114, 19, 48, .6);
+	border-radius: 10px;
+	width: 40%;
+	float: left;
+	padding: 35px;
+}
+
+	.article h2{
+		text-align: center;
+		width: 100%;
+		font-size: 60px;
+		text-decoration: underline;
+		color: #BBCD67;
+	}
+	.article .calendar {
+		padding: 10px;
+	}
+	h3 {
+		color: #BBCD67;
+		text-decoration: underline;
+		font-size: 30px;
+		text-align: left;
+	}
+	.article .calendar ul {
+		list-style: none;
+	}
+	.article .calendar li{
+		text-align: left;
+		color: #BBCD67;
+		font-size: 15px;
+	}
+
+	
+form {
+	background: rgba(49, 21, 87, .8);
+	border-radius: 10px;
+	margin: auto;
+	text-align: left;
+	padding: 20px;
+	width: 49%;
+	float: right;
+}
+
+	h3 {
+		color: #91A437;
+		font-size: 40px;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	label {
+		color: #91A437;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	input[type="password"]{
+	  -webkit-text-security: disc;
+	}
+
+	input[type=text], input[type=password], input[type=textarea], select {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+
+	form #section {
+			width: 100%;
+	}
+
+	input[type=submit] {
+		font-weight: bold;
+		font-size: 20px;
+		background-color:#91A437;
+		color: white;
+		padding: 15px 15px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		width:100%;
+	}
+	
+	input #submit{
+		margin: 0;
+	}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	<link href="../main_style.css" rel="stylesheet">
+	<link href="../css/contactus_style.css" rel="stylesheet">
+	<script src="../cgi-bin/contactus.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+</head>
+
+<body>
+	<header>	
+		<img class="topbanner" src="../images/topbanner.gif" alt="Paint and Sip!	Drink Wine! Make Art!">
+		<nav class="topnav">
+			<ul class="mainnav">
+				<li class="mainitem"><a href="../index.html">Home</a></li>
+				<li class="mainitem"><a href="whatwedo.html">What We Do!</a></li>
+				<li class="mainitem"><a href="signup.html"><strong>Sign Up!</strong></a></li>
+				<li class="mainitem"><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="form">
+		<form>
+			<h3>Contact Us</h3>
+		
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Your name..." minlength="12" required>
+
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" placeholder="example@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+
+			<label for="subject">Subject</label>
+			<input type="text" id="subject" name="subject" placeholder="subject..." minlength="2" maxlength="20" required>
+			
+			<textarea id="text" name="text" style="height:200px" minlength="2" maxlength="1000" required></textarea>
+
+			<input type="submit" value="Submit" onsubmit="contact()">
+
+		</form>
+	</div>
+	<div class="socialmedia">
+			<h2>Follow Us</h2>
+				<a href="#"><img src="../images/twitter.gif" alt="Twitter | "></a>
+				<a href="#"><img src="../images/facebook.gif" alt="Facebook | "></a>
+				<a href="#"><img src="../images/youtube.gif" alt="Youtube | "></a>
+				<a href="#"><img src="../images/instagram.gif" alt="Instagram | "></a>
+	</div>
+	<footer>
+	<br>
+		<p> © 2017 Paint and Sip!</p>
+	<br>
+	</footer>
+</body>
+
+</html>

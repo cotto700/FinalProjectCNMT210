@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link href="main_style.css" rel="stylesheet">
+	<link href="css/index_style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+</head>
+
+<body>
+	<header>	
+		<img class="topbanner" src="images/topbanner.gif" alt="Paint and Sip!	Drink Wine! Make Art!">
+		<nav class="topnav">
+			<ul class="mainnav">
+				<li class="mainitem"><a href="index.html">Home</a></li>
+				<li class="mainitem"><a href="pages/whatwedo.html">What We Do!</a></li>
+				<li class="mainitem"><a href="pages/signup.html"><strong>Sign Up!</strong></a></li>
+				<li class="mainitem"><a href="pages/contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div>
+		<article class="index_article">
+			<div class="slideshow">
+				<button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="display-right" onclick="plusDivs(1)">&#10095;</button>
+				<img class="mySlides" src="images/index1.jpeg" style="height:100%" alt="image not found">
+				<img class="mySlides" src="images/index2.jpeg" style="height:100%" alt="image not found">
+				<img class="mySlides" src="images/index3.jpeg" style="height:100%" alt="image not found">
+				<img class="mySlides" src="images/index4.jpeg" style="height:100%" alt="image not found">
+				<img class="mySlides" src="images/index5.jpeg" style="height:100%" alt="image not found">
+				<img class="mySlides" src="images/index6.jpeg" style="height:100%" alt="image not found">
+				<img class="mySlides" src="images/index7.jpeg" style="height:100%" alt="image not found">
+				<img class="mySlides" src="images/index8.jpeg" style="height:100%" alt="image not found">
+				<img class="mySlides" src="images/index9.jpeg" style="height:100%" alt="image not found">
+				<img class="mySlides" src="images/index10.jpeg" style="height:100%" alt="image not found">
+
+				
+			</div>
+
+				<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  if (n > x.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+					 x[i].style.display = "none";  
+				  }
+				  x[slideIndex-1].style.display = "block";  
+				}
+				</script>
+		
+			<div class="text">
+				<h1> Welcome to Paint and Sip!</h1>
+					<p class="p1">Thank you for Visiting our Website!</p>
+					<br>
+					<p class="p2">If you are here to learn all about us check out our <a href="pages/whatwedo.html">What We Do!</a> Page.</p>
+					<br>
+					<p class="p3">If you are here to browse and sign up for one of our events you can go right to our <a href="pages/signup.html">Sign Up!</a> page.</p>
+					<br>
+					<p class="p4">And if you have any questions or concerns <a href="pages/contactus.html">Contact Us</a> here!</p>
+			</div>
+		</article>
+		
+
+
+
+	</div>
+	<footer>
+	<br>
+		<p> © 2017 Paint and Sip!</p>
+	<br>
+	</footer>
+</body>
+
+</html>
